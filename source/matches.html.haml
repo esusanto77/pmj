@@ -1,0 +1,250 @@
+---
+title: Your Matches | PM Jakarta
+---
+
+#main.site-main
+	.container
+		.row
+			.col-md-3.left-content.visible-lg.visible-md
+				%section.user-profile-wrapper.clearfix
+					.img-wrap.pull-left
+						%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/ 
+					.user-name
+						%h3.name Emma Watson
+						%p.subscribe-status
+							Subscription:
+							%br/ 
+							%strong 3 Months
+						\
+						/ end of .subscribe-status
+					\
+					/ end of .user-name
+				%section#dash-nav.menu-left 
+					%ul.list-group
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-user 
+								Profile
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-heart
+								Favorite
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-envelope
+								Message
+								%span.badge.pull-right 31
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-list-ul
+								Activity
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-star 
+								Favorited Me
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-eye
+								Viewed Me
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%span.fa-stack 
+									%i.fa.fa-circle.fa-stack-2x
+									%i.fa.fa-align-justify.fa-stack-1x.fa-inverse
+								Online List
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-gift
+								Gift Code
+						%li.list-group-item 
+							%a{:href => "#"} 
+								%i.fa.fa-user 
+								Upgrade
+					\
+					/ end of .list-group
+				\
+				/ end of #menu-dash.menu-left
+				%section#dash-browse.menu-left
+					.panel.panel-default.panel-pmj
+						.panel-heading
+							%h3.panel-title 
+								%i.fa.fa-search.fa-flip-horizontal
+								Browse
+						.panel-body
+							%form.form-horizontal{role: "form"}
+								.form-group
+									%label.col-sm-4.control-label{for: "gender"} Gender
+									.col-sm-8
+										%p
+											%strong Male
+								.form-group
+									%label.col-sm-4.control-label{for: "Age"} Age
+									.col-sm-8
+										%select#min-age{:name => "min-age"} 
+											%option{:value => "-"} Min
+											%option{:value => "1"} 1
+											%option{:value => "2"} 2
+											%option{:value => "3"} 3
+										%span to
+										%select#max-age{:name => "max-age"} 
+											%option{:value => "-"} Max
+											%option{:value => "1"} 1
+											%option{:value => "2"} 2
+											%option{:value => "3"} 3
+								.form-group
+									%label.col-sm-4.control-label{for: "area-range"} Area Range
+									.col-sm-8
+										%select#area-range{:name => "area"} 
+											%option{:value => "-"} Jakarta
+											%option{:value => "-"} Bogor
+											%option{:value => "-"} Depok
+											%option{:value => "-"} Tanggerang
+											%option{:value => "-"} Bekasi
+								%hr/ 
+								.form-group
+									.col-sm-offset-4.col-sm-8
+										%button.btn.btn-primary.pull-right{type: "submit"} Search
+			\
+			/ end of .left-content
+			.col-md-9.right-content#right-content
+				%section.alert-wrapper
+					.alert.alert-dismissable.alert-pmj
+						%button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} &#215;
+						%h3.pink.text-center You Have 4 New Best Match!
+						%p.text-center Don't hesitate to send them messages, chat or love their profile.
+				\
+				/ end of .alert-wrapper
+				%section.match-wrapper#best-matches
+					.panel.panel-default.panel-pmj.panel-match
+						.panel-heading
+							%h3.panel-title
+								Your Matches
+						.panel-body
+							.row.match-row
+								- (1...7).each do |i|
+									.col-sm-3.col-xs-6.user-match
+										%a.user-image.pjax-popup-profile{:href => "#"}(data-pjax-url="user-profile-popup.html")
+											%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/ 
+											%h4.user-name
+												%span.user-status
+												James
+										\
+										/ end of .user-image
+										.user-profile
+											%p Movie, Toys, Positive, Adventures
+											%hr/ 
+											%ul.user-action
+												%li 
+													%a{:href => "#", :class => "action-email"} 
+														%i.fa.fa-envelope 
+												%li 
+													%a{:href => "#", :class => "action-message"} 
+														%i.fa.fa-comment
+												%li 
+													%a{:href => "#", :class => "action-favorite active"} 
+														%i.fa.fa-heart
+											\
+											/ end of .user-action
+										\
+										/ end of .user-profile
+									\
+									/ end of .col-sm-3.col-xs-6.user-match
+									.col-sm-3.col-xs-6.user-match
+										%a.user-image.pjax-popup-profile{:href => "#"}(data-pjax-url="user-profile-popup-2.html")
+											%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/ 
+											%h4.user-name
+												%span.user-status.active
+												James
+										\
+										/ end of .user-image
+										.user-profile
+											%p Movie, Toys, Positive, Adventures
+											%hr/ 
+											%ul.user-action
+												%li 
+													%a{:href => "#", :class => "action-email"} 
+														%i.fa.fa-envelope 
+												%li 
+													%a{:href => "#", :class => "action-message"} 
+														%i.fa.fa-comment
+												%li 
+													%a{:href => "#", :class => "action-favorite"} 
+														%i.fa.fa-heart
+											\
+											/ end of .user-action
+										\
+										/ end of .user-profile
+									\
+									/ end of .col-sm-3.col-xs-6.user-match
+							\
+							/ end of .row.match-row
+					\
+					/ end of .panel.panel-default.panel-pmj.panel-match
+			\
+			/ end of .right-content
+	\
+	/ end of .container
+\
+/ end of #main.site-main
+
+
+#popuser.popuser.modal.fade{"aria-hidden" => "true", role: "dialog", tabindex: "-1"}
+	.popuser-dialog.modal-dialog
+		.popuser-content.modal-content
+			.popuser-body
+				.popuser-header
+					%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"}
+					.popup-bg
+						%img{:src => "assets/img/dummy/bg-user-popup.jpg", :alt => ""}/ 
+					.popuser-name-wrap
+						.popuser-avatar.pull-left
+							%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/ 
+						.popuser-name.white
+							%h3.name Pan Robi Kin
+							%span.age 28 years
+							%span.city Jakarta
+					\
+					/ end of .popuser-name
+					.popuser-action.clearfix
+						%ul.user-action.pull-left
+							%li 
+								%a{:href => "#", :class => "action-email"} 
+									%i.fa.fa-envelope 
+							%li 
+								%a{:href => "#", :class => "action-message"} 
+									%i.fa.fa-comment
+							%li 
+								%a{:href => "#", :class => "action-favorite"} 
+									%i.fa.fa-heart
+						\
+						/ end of .user-action
+						%a.view-full-profile.pull-right{:href => "#"} View Full Profile
+				\
+				/ end of .popuser-header
+				.popuser-profile-wrap.clearfix
+					%dl.dl-horizontal.popuser-profile.pull-right
+						%dt Age
+						%dd 28
+						%dt Sex
+						%dd Male
+						%dt Religion
+						%dd Campuran
+						%dt Ethnicity
+						%dd Canadian
+						%dt Occupation
+						%dd Employee
+						%dt Relationship Status
+						%dd Single / Never Married
+						%dt Kids
+						%dd No
+					\
+					/ end of .dl-horizontal.popuser-profile
+				\
+				/ end of .popuser-profile-wrap
+
+
+\
+/ popup user profile
+
+
+

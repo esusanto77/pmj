@@ -1,0 +1,137 @@
+/ .site-header #masthead
+%header#masthead.site-header{:role => "banner"}
+	.container
+		.row
+			%button.user-menu-button.visible-xs.visible-sm
+				%span
+				%span
+				%span
+			\
+			/ end of .user-menu
+
+			%button.user-right-button.visible-xs.visible-sm
+				%span
+				%span
+				%span
+
+			.col-md-3.logo-wrap
+				%a{:href => "/", :class => "logo logo-brand"} 
+					%img{:src => "assets/img/logo.png", :alt => ""}/
+			\
+			/ end of .logo-wrap
+
+			.col-md-9.main-nav-wrap
+				%nav.main-nav.visible-lg.visible-md
+					%ul.nav.navbar-right
+						%li 
+							%a{:href => "#"}
+								%i.fa.fa-home 
+						%li.dropdown
+							%a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+								%i.fa.fa-comment 
+								%span.badge 2
+							%ul.dropdown-menu.arrow_top.notification-messages-wrap
+								%li.header
+									%h3 Chat (<span class="number">2</span>)
+								%li.list-messages-wrap
+									%ul.list-messages
+										%li.item.clearfix.unread
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+										%li.item.clearfix.read
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+								%li.footer
+									%a{href: "#", :class => "see-all"} See All
+						%li 
+							%a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+								%i.fa.fa-envelope 
+								%span.badge 21
+							%ul.dropdown-menu.arrow_top.notification-messages-wrap
+								%li.header
+									%h3 Messages (<span class="number">21</span>)
+								%li.list-messages-wrap
+									%ul.list-messages
+										%li.item.clearfix.unread
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+										%li.item.clearfix.read
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+								%li.footer
+									%a{href: "#", :class => "see-all"} See All
+						%li 
+							%a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+								%i.fa.fa-exclamation-circle
+								%span.badge 12
+							%ul.dropdown-menu.arrow_top.notification-messages-wrap
+								%li.header
+									%h3 Notifications (<span class="number">12</span>)
+								%li.list-messages-wrap
+									%ul.list-messages
+										%li.item.clearfix.unread
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+										%li.item.clearfix.read
+											%a{:href => "#"} 
+												.user-image.pull-left
+													%img{:src => "assets/img/dummy/user.jpg", :alt => "", :class => "avatar"}/
+												.user-activity
+													%p.name James Patterson (2)
+													%p.message Hi.. Are you busy?
+													%span.time 3:15pm
+								%li.footer
+									%a{href: "#", :class => "see-all"} See All
+						%li.dropdown.profile
+							%a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+								Emma
+								%b.caret
+							%ul.dropdown-menu.arrow_top.text-right
+								%li
+									%a{href: "#"} Edit Profile
+								%li
+									%a{href: "#"} Setting Account
+								%li
+									%a{href: "#"} Invite Friends
+								%li.divider
+								%li
+									%a{href: "#"} Log out
+							\
+							/ end of .dropdown-menu
+						\
+						/ end of .dropdown
+					\
+					/ end of ul
+				\
+				/ end of .main-nav
+			\
+			/ end of end of .main-nav-wrap
+	\
+	/ end of .container
+\
+/ end of #masthead.site-header

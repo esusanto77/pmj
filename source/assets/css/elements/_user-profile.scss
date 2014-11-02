@@ -1,0 +1,172 @@
+/* Ribbon Badge
+------------------------------------------------------------------- */
+.ribbon-badge {
+  color: #fff;
+  background: #F487B5;
+  padding: 7px 10px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased
+}
+
+/* User Photo Edit Panel
+------------------------------------------------------------------- */
+.panel-user-photo {
+  .panel-heading {
+    border-bottom-color: transparent;
+  }
+
+  .panel-body {
+    padding-top: 0;
+  }
+
+  .user-photo {
+    position: relative;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+
+    img {
+      width: 100%
+    }
+
+    a {
+      color: #fff;
+      display: block;
+    }
+
+    span {
+      bottom: 5px;
+      left: 5px;
+      position: absolute;
+      font-size: 16px;
+    }
+
+    &:before {
+      content: "";
+      height: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include gradient-vertical(rgba(#000, 0), rgba(#000, .7));
+    }
+  }
+}
+
+.edit-profile {
+  input[type="submit"] { 
+    background: #f0f0f0;
+    float: right;
+  }
+
+  .delete-account {
+    margin-top: 30px;
+    padding: 5px 0;
+    border-top: 1px solid #ebebeb;
+    a {
+      color: #F1C327
+    }
+  }
+}
+
+/* User Profile Links
+------------------------------------------------------------------- */
+.user-profile-links {
+  padding: 10px 0;
+  background: #E9EAEC;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 20px;
+
+  li {
+    position: relative;
+  }
+
+  a {
+    color: #72757A;
+    display: block;
+    padding: 10px 30px;
+
+    &:hover {
+      color: #25CCBD;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  ul ul {
+    display: none;
+  }
+
+  // Level One
+  // ---------
+  > ul > li > a {
+    &:before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      left: 13px;
+      top: 13px;
+      position: absolute;
+      background: #72757A;
+      @include border-radius(10px);
+    }
+    &:hover:before {
+      background: #25CCBD;
+    }
+
+    &.have-child:after {
+      content: "";
+      border: 5px solid transparent;
+      border-top-color: #72757A;
+      position: absolute;
+      right: 13px;
+      top: 13px;
+    }
+    &.have-child:hover:after {
+      border-top-color: #25CCBD;
+    }
+  }
+
+  &.no-bullet a:before {
+    display: none;
+  }
+
+  // Level Two
+  // ---------
+  ul ul {
+    padding-left: 20px;
+    background: #DADEDF;
+  }
+
+  .badge {
+    margin-left: 10px;
+  }
+}
+
+
+/* User Data List
+------------------------------------------------------------------- */
+.list-data {
+  li {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+.user-photo-list {
+  li {
+    margin-bottom: 15px;
+  }
+  a {
+    display: block;
+    overflow: hidden;
+    @include border-radius(5px);
+  }
+}
+.view-all-photos {
+  float: right;
+}

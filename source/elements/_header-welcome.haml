@@ -1,0 +1,26 @@
+/ .site-header #masthead
+%header#masthead.site-header.front-content-wrapper{:role => "banner"}
+	.container
+		.row
+			.col-md-3.logo-wrap
+				%a{:href => "/", :class => "logo logo-brand"} 
+					%img{:src => "assets/img/logo.png", :alt => ""}/
+			\
+			/ end of .logo-wrap
+			.col-md-9.main-nav-wrap
+				%nav.main-nav.visible-lg.visible-md
+					%ul.nav.navbar-right.nav-front
+						%li
+							%a{:href => "#"} SIGN UP
+						%li
+							%a{:href => "#"} HELP
+					\
+					/ end of ul
+				\
+				/ end of .main-nav
+			\
+			/ end of end of .main-nav-wrap
+	\
+	/ end of .container
+\
+/ end of #masthead.site-header

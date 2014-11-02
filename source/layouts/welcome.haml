@@ -1,0 +1,17 @@
+!!! 5
+%html{:lang => "en-US"}
+	%head
+		= partial 'elements/meta'
+	%body{:class => page_classes}
+		#page.hfeed
+			\
+			= partial 'elements/header-welcome'
+			\
+			= yield
+			\
+			= partial 'elements/footer-welcome'
+			\
+		/ end #page.hfeed
+		\
+
+		= partial 'elements/footer-code'

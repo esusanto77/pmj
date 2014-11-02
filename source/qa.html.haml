@@ -1,0 +1,53 @@
+---
+title: Questions and Answers
+---
+
+#main.site-main
+  .container
+    .row
+      %section.qa-section
+        %header.qa-section-header.clearfix
+          %h2.qa-section-title.col-md-4 Starting Question
+          .qa-section-progress.col-md-8
+            %span 0%
+            .progress-bar
+              %div{:style => "width: 0%"}
+        / end of .qa-section-header
+        \
+        
+        .qa-question-list.clearfix
+        / end of .qa-question-list
+        \
+        
+        %nav.qa-section-nav
+          %a.prev.btn.btn-primary.disabled{:href => "#"} Back
+          %a.next.btn.btn-primary{:href => "#"} Next
+        / end of .qa-section-nav
+      / end of .qa-section
+      \
+      
+      :plain
+        <script id="qa-question-template" type="x-tmpl-mustache">
+          <form>
+            <h4 class="qa-question-label">
+              Question <span>{{ questionNumber }}</span>
+            </h4>
+            
+            {{ #questions }}
+              <div class="qa-sub-question">
+                <h3 class="qa-question-title">{{ question_title }}</h3>
+
+                <div class="qa-choice">
+                  {{ #choices }}
+                    <label>
+                      <input type="radio" name="{{ input_name }}" value="{{ value }}">
+                      <span>{{ label }}</span>
+                    </label>
+                  {{ /choices }}
+                </div>
+              </div>
+            {{ /questions }}
+          </form>
+        </script>
+        
+        

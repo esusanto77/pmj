@@ -1,0 +1,363 @@
+// QA Section
+.qa-section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 782px;
+}
+.site-header.header-dark {
+  background: #333;
+  margin-bottom: 0;
+  border-bottom-width: 1px;
+
+  .logo-brand {
+    color: $brand-primary
+  }
+}
+
+/* QA Header
+------------------------------------------------------------------- */
+.qa-section-header {
+  // border-bottom: 5px solid #efefef;
+  // margin-bottom: 30px;
+  text-align: left;
+  padding-bottom: 10px;
+
+  .qa-section-title {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.qa-section-progress {
+  span {
+    color: #b4b4b4;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+  }
+
+  .progress-bar {
+    overflow: hidden;
+    height: 11px;
+    margin-top: 5px;
+    background: #fbeaf2;
+    @include border-radius(5px);
+
+    div {
+      background: #fd6ea4;
+      display: block;
+      height: 100%;
+      @include transition(width 0.2s ease);
+    }
+  }
+}
+
+.qa-title-heading {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: $brand-primary;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 30px;
+
+  h2 {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  h2:before {
+    content: '';
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+  }
+
+  span {
+    font-weight: normal;
+  }
+}
+
+/* QA Questions
+------------------------------------------------------------------- */
+body.qa {
+  background: #fbfbfb;
+}
+.qa-question-list-wrapper {
+  background: #fff;
+  overflow: hidden;
+  padding: 25px;
+  margin-bottom: 30px;
+  @include box-shadow(0 2px 1px rgba(0,0,0,.16));
+}
+.qa-question-list.animate {
+  margin-left: 0;
+  @include transition( all 0.3s ease );
+}
+
+.qa-question-item {
+  min-height: 300px;
+  padding-bottom: 30px;
+  float: left;
+  width: 100%;
+
+  &.scroller-content {
+    max-height: 460px;
+  }
+
+  .qa-question-label {
+    font-size: 14px;
+    color: #a6a6a6;
+    margin: 0 0 10px;
+  }
+  .qa-question-subtitle {
+    color: #e973a5;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .qa-question-title {
+    color: #505050;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 0;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+    text-align: left;
+    padding-bottom: 10px;
+
+    span {
+      font-size: 13px;
+      display: block;
+      margin-bottom: 5px;
+      color: $pink;
+    }
+  }
+
+  .qa-choice {
+    padding: 20px 0;
+  }
+}
+
+.qa-choice {
+  label {
+    cursor: pointer;
+    margin: 0 20px;
+  }
+
+  span {
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .circle {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 10px;
+    border: 3px solid #cbd0d3;
+    @include border-radius(100px);
+
+    i {
+      display: none;
+      font-size: 25px;
+      margin-top: -3px;
+      line-height: 45px;
+    }
+  }
+
+  .checked {
+    i {
+      color: #e973a5;
+      display: block;
+    }
+    .circle {
+      border-color: #e973a5
+    }
+  }
+}
+.qa-sub-question {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #e2e2e2;
+
+  &.disabled {
+    .qa-question-title {
+      color: #dbdbdb;
+      font-size: 18px;
+    }
+    .qa-question-subtitle {
+      display: none;
+    }
+
+    .qa-choice {
+      display: none;
+    }
+  }
+  .qa-question-title {
+    text-align: left;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* QA Navigation
+------------------------------------------------------------------- */
+.qa-section-nav {
+  .btn {
+    font-size: 15px;
+    font-weight: bold;
+    background: #81d8cf;
+    border: 2px solid #81d8cf;
+    padding: 6px 45px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased
+  }
+
+  .btn.disabled {
+    // color: #81d8cf;
+    // background: #fff;
+    background: #e8eaeb;
+    color: #fff;
+    border-color: #e8eaeb
+  }
+}
+
+
+/* QA Transition
+------------------------------------------------------------------- */
+.section-qa-progress {
+  color: #fff;
+  margin-top: 120px;
+  -webkit-font-smoothing: antialiased
+}
+.qa-progress-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  .title {
+    font-size: 56px;
+    font-weight: normal;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+
+  strong, span {
+    font-weight: bold;
+  }
+  span {
+    color: $brand-primary;
+  }
+}
+
+/* QA Transition Progress Bar
+------------------------------------------------------------------- */
+.qa-progress-bar-wrapper {
+  margin-bottom: 70px;
+  padding-left: 42px;
+
+  .qa-progress-bar {
+    background: #120406;
+    position: relative;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 17px;
+
+    &, div {
+      @include border-radius(30px);
+    }
+
+    div {
+      top: 0;
+      left: -1px;
+      bottom: 0;
+      background: $brand-primary;
+      position: absolute;
+    }
+
+    .percentage {
+      position: absolute;
+      left: -42px;
+    }
+
+    .view-match {
+      right: 5px;
+      top: 0;
+      color: #515151;
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 17px;
+    }
+  }
+}
+
+/* QA Transition Progress Next
+------------------------------------------------------------------- */
+.qa-progress-next-wrapper {
+  max-width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .qa-progress-next {
+    padding-bottom: 65px;
+    border-bottom: 1px dashed #989999;
+  }
+}
+.qa-progress-icon {
+  float: left;
+  margin-right: 20px;
+  @include size(75px,75px);
+  display: block;
+  text-align: center;
+  background: #000;
+  background: rgba(#000,.53);
+  line-height: 75px;
+  font-size: 30px;
+  color: $brand-primary;
+  @include border-radius(75px)
+}
+.qa-progress-next-text {
+  font-size: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.qa-progress-next-btn {
+  background: $pink;
+  color: #fff;
+  font-weight: bold;
+  line-height: 42px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 25px;
+
+  &:before {
+    content: '';
+    top: -1px;
+    right: -49px;
+    position: absolute;
+    border-width: 28px 25px;
+    border-style: solid;
+    border-color: transparent transparent transparent $pink;
+  }
+}
+
+@media (max-width: $screen-phone) {
+  .qa-progress-next-text {
+    clear: both;
+    text-align: center;
+    
+  }
+}

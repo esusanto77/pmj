@@ -1,0 +1,35 @@
+{ 
+  "total_slides": 5,
+  "total_questions": 9,
+  "questions": [
+    {
+      "question_title": "Gender?",
+      "input_name": "user_gender",
+      "choices": [
+        {
+          "value": "male",
+          "label": "Male"
+        },
+        {
+          "value": "female",
+          "label": "Female"
+        }
+      ]
+    },
+
+    {
+      "question_title": "Gender?",
+      "input_name": "user_gender2",
+      "choices": [
+        {
+          "value": "male",
+          "label": "Male"
+        },
+        {
+          "value": "female",
+          "label": "Female"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+/*=========*/
+.panel-online {
+  margin-bottom: 6px;
+}
+.panel-online .user-online {
+  position: relative;
+  margin-bottom: 20px;
+}
+.panel-online .user-online .user-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .panel-online .user-match .user-image {
+    height: 158px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .panel-online .user-online .user-image {
+    height: 152px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .panel-online .user-online .user-image {
+    width: 173px;
+    height: 173px;
+  }
+}
+.panel-online .user-online .avatar {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.panel-online .user-online .user-name {
+  bottom: 10px;
+  color: white;
+  font-size: .9em;
+  left: 10px;
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+.panel-online .user-online .user-status {
+  background-color: #ccd1d4;
+  display: inline-block;
+  height: 10px;
+  margin-right: 3px;
+  width: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.panel-online .user-online .user-status.active {
+  background-color: #00d30d;
+}
+.panel-online .user-online .user-profile {
+  border: 1px solid #e8eaeb;
+  border-top: none;
+  padding: 15px 10px 10px;
+  position: relative;
+  top: -3px;
+}
+.panel-online .user-online .user-profile p {
+  color: #989999;
+  font-size: .9em;
+}
+.panel-online .user-online .user-action {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.panel-online .user-online .user-action > li {
+  display: inline-block;
+  padding: 4px 5px;
+}
+.panel-online .user-online .user-action a {
+  border: 2px solid #ccd1d4;
+  color: #ccd1d4;
+  display: block;
+  padding: 5px 6px;
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.panel-online .user-online .user-action a:hover, .panel-online .user-online .user-action a.active {
+  border-color: #1ecbb8;
+  color: #1ecbb8;
+}
+.user-status active{
+  border: 1px solid #fff !important;
+}
+.display-name {
+  border-radius: 3px;
+  padding-left: 4px;
+  padding-right: 5px;
+  background-color: rgba(0,0,0,0.1);
+  text-shadow: 0 0 1px #5A5858, 0 0 1px #5A5858
+}
+/*.display-info {
+  text-shadow: 0 0 2px #5A5858, 0 0 2px #5A5858
+}*/
+/*=========*/

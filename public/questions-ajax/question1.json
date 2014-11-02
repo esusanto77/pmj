@@ -1,0 +1,66 @@
+{ 
+  "total_slides": 5,
+  "total_questions": 9,
+  "questions": [
+    {
+      "question_title": "Where do you live?",
+      "input_name": "user_location",
+      "choices": [
+        {
+          "value": "jakarta",
+          "label": "Jakarta"
+        },
+        {
+          "value": "bogor",
+          "label": "Bogor"
+        },
+        {
+          "value": "depok",
+          "label": "Depok"
+        },
+        {
+          "value": "tangerang",
+          "label": "Tangerang"
+        },
+        {
+          "value": "bekasi",
+          "label": "Bekasi"
+        },
+        {
+          "value": "cibubur",
+          "label": "Cibubur"
+        }
+      ]
+    },
+
+    {
+      "question_title": "Relationship Status?",
+      "input_name": "relationship_status",
+      "choices": [
+        {
+          "value": "married",
+          "label": "Married"
+        },
+        {
+          "value": "not_married",
+          "label": "Not Married"
+        }
+      ]
+    },
+
+    {
+      "question_title": "Gender?",
+      "input_name": "tesname",
+      "choices": [
+        {
+          "value": "male",
+          "label": "Male"
+        },
+        {
+          "value": "female",
+          "label": "Female"
+        }
+      ]
+    }
+  ]
+}

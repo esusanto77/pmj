@@ -1,0 +1,588 @@
+/* New Style Dycode faerulsalamun@gmail.com */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body{
+	font-family: 'Raleway';
+}
+
+#header3 {
+	height: 71px;
+	width:100%;
+}
+
+#header_payment{
+	height:39px;
+	background: #f5fafa;
+	z-index: 110;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 -3px 5px 0 #222;
+	border-bottom: solid 5px #59a2b3;
+	top: 0px;
+}
+
+.logo3 {
+	width:100%;	
+	height:200px;
+}
+
+.custom-payment-logo{
+	margin-bottom:50px;
+	margin-top:100px;
+}
+
+.custom-payment-logo2{
+	margin-bottom:100px;
+	margin-top:65px;
+}
+
+.custom-payment-logoconfirm{
+	margin-bottom:50px;
+	margin-top:100px;
+}
+
+.info-header-payment {
+	display: block;
+	font-weight: normal;
+	font-family: 'Raleway Medium', Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}	
+
+.info-header-payment2 {
+	display: block;
+	font-weight: normal;
+	font-family: 'Raleway Medium', Arial, sans-serif;
+	font-size: 17px;
+	margin: 13px auto 0 auto;
+	text-align: center;
+	padding-top: 10px;
+}	
+
+.price {
+	font-size: 4em;
+}
+
+.price-cents {
+	vertical-align: super;
+	font-size: 50%;
+}
+
+.price-month {
+	font-size: 35%;
+	font-style: italic;
+}
+
+#wrapper-sukses {
+	margin: auto;
+	min-height: 100%;
+	width: 100%;
+	background: #8ad7f5 url('../img/BG.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#wrapper-failed {
+	margin: auto;
+	min-height: 100%;
+	width: 100%;
+	background: #8ad7f5 url('../img/failed.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.image_tulisan { 
+	position: relative; 
+}
+
+#non-member,#member{
+	display: none;
+}
+
+.dropdown-report-menu {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 34px;
+	width: 400px;
+	margin: 5px auto 10px auto;
+	background: url(../img/dropdown-report.png);
+}
+
+.dropdown-report-choose {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 8px 0 8px 10px;
+	font-size: 14px;
+	color: #476d76;
+	background: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	cursor: pointer;
+	font-family: 'Raleway Regular', Arial, sans-serif;
+}
+
+.modal-report-new-textarea{
+	width: 380px;
+	margin: 13px 0px 0 35px;
+	border-radius: 5px;
+	border: solid 1px #add1e9;
+	color: #59a2b3;
+	font-family: 'Raleway Regular', Arial, sans-serif;
+	padding: 8px;
+	height: 40px;
+	outline: #add1e9;
+	float: left;
+	resize: none;
+}
+
+#show-reason{
+	display: none;
+}
+
+.report-user, .report-user a:visited,.report-user a{
+	color: #1d6474;
+	font-size: 13px;
+}
+
+/* New For Boostrap*/
+
+/* Header */
+.site-header{
+	margin-bottom: 0px;
+	/*border: none;*/
+}
+
+/* End Of Header */
+.payment-image {
+	background: white url(../img/payment/ImageHeader.png) no-repeat center bottom;
+	width:100%;	
+	min-height:170px;
+}
+
+.welcome-premium{
+	color:#38c1b3;
+	font-size: 3em;
+	margin-top: 28px;
+	font-weight: bold;
+}
+
+.tulisan-header{
+	font-size: 15px;
+	color: #6C6C6C;
+	font-weight: bold;
+}
+
+.tulisan-header-process{
+	font-size: 90%;
+	color: #6C6C6C;
+	font-weight: bold;
+}
+
+.tulisan-header-process li{
+	display:inline;
+}
+
+@media screen and (max-width: 549px){
+	.welcome-premium{
+		font-size: 200%;
+		font-weight: bold;
+	}
+
+	.tulisan-header{
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 310px){
+	.welcome-premium{
+		font-size: 150%;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.panel{
+		margin-bottom: 80px;
+	}
+}
+
+.breadcumb-progress{
+	margin-top: 100px;
+}
+
+@media  (max-width: 300px){
+	.breadcumb-progress{
+		margin-top: 50px;
+	}
+}
+
+.product{
+	margin-top: 50px;
+}
+
+.text-select-premium-membership-1{
+	font-size: 35px;
+	font-weight: bold;
+	color:#545454;
+}
+
+
+.text-select-premium-membership-2{
+	font-size: 15px;
+	margin-bottom: 90px;
+	color:#545454;
+	font-weight: bold;
+}
+
+
+@media (max-width: 666px){
+	.text-select-premium-membership-1{
+		font-size: 1em;
+	}
+	.text-select-premium-membership-2{
+		font-size: 1em;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 340px){
+	.text-select-premium-membership-1{
+		font-size: 0.8em;
+	}
+	.text-select-premium-membership-2{
+		font-size: 0.7em;
+		margin-top: 15px;
+	}
+}
+
+.text-list-payment{
+	padding-left: 20px;
+}
+
+
+.check{
+	background: url(../img/payment/IconCheckMark.png) no-repeat;
+	background-position: 15px;
+}
+
+.cross{
+	background: url(../img/payment/IconCross.png) no-repeat;
+	background-position: 15px;
+}
+
+.list-group-item {
+	border: none;
+	background-color: transparent;
+}
+
+.panel-heading{
+	border-bottom: none;
+}
+
+
+.logo-payment-header{
+	float: right;
+	margin-top: -60px;
+	margin-right: -50px;
+}
+
+.payment-information{
+	margin-top:30px;
+	font-size:18px;
+	line-height:10px;
+}
+
+@media (max-width: 350px){
+	.payment-information{
+	font-size:1em;
+}
+}
+
+
+.payment-description{
+	border-bottom:1px solid #ddd;
+	margin-bottom:30px;
+	line-height:12px;
+}
+
+.text-payment-method{
+	margin-top:-20px;
+	font-weight: bold;
+}
+
+.list-logo-payment{
+	list-style-type: none; 
+	margin-left:-34px;
+	margin-top:18px;
+}
+
+.list-logo-payment li{
+	display: inline;
+	margin-right:10px;
+}
+
+@media screen and (max-width: 991px){
+	.logo-payment-header{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 991px){
+	.line-right-payment{
+		border-right:1px solid #ddd;
+	}
+
+	.payment-information{
+		margin-left: 35px;
+	}
+
+	.payment-description{
+		margin-left: 35px;
+	}
+
+	.text-payment-method{
+		margin-left: 15px;
+	}
+
+	.list-logo-payment{
+		margin-left:12px;
+	}
+
+	.list-logo-payment li{
+		margin-right:10px;
+	}
+}
+
+.checkbox-member-or-non ul{
+	list-style-type: none;
+}
+
+.checkbox-member-or-non li{
+	display: inline; 
+	margin-right:10px;
+}
+
+.billed-one-time-product{
+	font-size: 15px;
+	color: #545454;
+	font-weight: bold;
+}
+
+.list-group-item .learn-more{
+	color: #f789b8;
+	text-decoration: underline;
+}
+
+.list-group-item .learn-more:hover{
+	text-decoration: none;
+}
+
+/* Custom Buttom */
+.btn-custom{
+	margin-top: 20px;
+	padding:5px 50px;
+	font-size: 18px;
+}
+
+/* End Of Custom Buttom */
+
+/* Text */
+.price-product{
+	font-size: 15px;
+	color: #545454;
+	font-weight: bold;
+}
+
+/* End Of Custom Text */
+
+/* Custom Panel */
+.panel{
+	border-radius: 0;
+}
+
+.panel-heading h3{
+	margin-top:-80px;
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.panel-default {
+	height:auto;
+}
+
+.panel-default > .panel-heading {
+	color: #333;
+	background-color: white;
+	border-color: #ddd;
+}
+/* End Of Custom Panel  */
+
+/* Custom Error */
+.has-error .help-block{
+	color: #F78686;
+	font-size: 15px;
+}
+
+/* End Of Custom Error */
+
+/* Payment Sukses */
+.payment-sukses{
+	margin: auto;
+	min-height: 900px;
+	width: 100%;
+	background: #8ad7f5 url('../img/payment/payment-sukses.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.text-payment{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.btn-information{
+	min-width: 250px;
+}
+/* End Of Payment Sukses */
+
+/* Payment Failed */
+.payment-failed{
+	margin: auto;
+	min-height: 900px;
+	width: 100%;
+	background: #8ad7f5 url('../img/payment/payment-failed.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.text-payment-failed{
+	color: #e83f7b;
+}
+
+/* End Of Payment Failed */
+
+/* Redeem Code */
+.form-redeem-code{
+	width: 300px;
+	position: relative;
+}
+
+@media (max-width: 767px) {
+	.form-redeem-code {
+		width: 90%;
+		padding-bottom: 30px;
+	}
+}
+
+.form-redeem-code input {
+	padding: 10px 20px;
+	height: auto;
+	min-width: 200px;
+}
+
+.form-redeem-code button {
+	width: 300px;
+	padding: 10px 45px;
+	background-color: #1ecbb8;
+	color: white;
+	border: none;
+}
+
+@media (max-width: 767px) {
+	.form-redeem-code button {
+		width: 100%;
+	}
+}
+
+.form-redeem-code button:hover {
+	background-color: #f789b8;
+}
+/* End Of Redeem Code */
+
+/* Breadcumb Payment */
+.breadcrumb {
+	font-size: 100%;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px 15px;
+	list-style: none;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.breadcumb-process{
+	text-align: center;
+}
+
+
+@media (max-width:1119px) and (min-width: 530px){
+	.breadcrumb{
+		margin-top: 45px;
+	}
+}
+
+@media (max-width:535px){
+	.breadcrumb{
+		margin-top: 0px;
+	}
+}
+
+@media (max-width:320px){
+	.breadcrumb{
+		vertical-align: middle;
+	}
+}
+
+.breadcrumb > li {
+	display: inline-block;
+}
+
+.breadcrumb > .active {
+	color: #999;
+}
+.color-breadcumb-1{
+	color: #396A76;
+}
+.color-breadcumb-2{
+	color: #ed739e;
+}
+.color-breadcumb-3{
+	color: #cecece;
+}
+
+.font-breadcumb{
+	font-size: 1em;
+}
+
+@media (max-width: 330px){
+	.font-breadcumb{
+		font-size: 0.81em;
+	}
+}
+/* End Of Breadcumb Payment */
+.panel-button{
+	box-shadow: none;
+}
+
+.breadcumb-payment{
+	margin-top : 0;
+}
+
+.panel-left{
+	padding:10px;
+	margin-top:-60px;
+}
+
+.panel-right{
+	margin-top:100px;
+}

@@ -1,0 +1,245 @@
+/*all notify*/
+.box-notify{
+	overflow: hidden;
+	height: 100%;
+	padding-bottom: 122px;
+}
+.list-notify{
+	overflow: auto;
+	list-style:none;
+	margin:0;
+	padding:0;
+	max-height: 250px;
+}
+.main-nav .list-notify>.item{
+	border-top:1px solid #d8d8d8;
+	display:block;
+	padding:10px;
+	font-size:0.929em
+}
+.main-nav .list-notify>.item.unread{
+	background-color:#def7f3
+}
+.main-nav .list-notify>.item:hover{
+	background-color:#eefbf9
+}
+.main-nav .list-notify>.item .user-image{
+	height:60px;
+	width:60px;
+	overflow:hidden;
+	margin-right:10px
+}
+.main-nav .list-notify>.item img{
+	width:100%;
+	height:100%;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+.main-nav .list-notify>.item a{
+	text-decoration:none;
+	color: #000000;
+}
+.main-nav .list-notify>.item a:hover{
+	color: #1ecbb8;
+}
+.main-nav .list-notify .name{
+	color:#282828;
+	margin:0 0 3px 0;
+}
+.main-nav .list-notify .notify{
+	color:#989999;
+	margin-bottom:0;
+}
+.main-nav .list-notify .time{
+	color:#989999;
+	font-size: 10px;
+	margin-bottom:0;
+}
+
+/*message notify*/
+.avatar-message-notify{
+	border-radius: 5px;
+}
+
+/* chat notify */
+.list-chat-notify{
+	overflow: auto;
+	list-style:none;
+	margin:0;
+	padding:0;
+	max-height: 250px;
+}
+.main-nav .list-chat-notify>.item{
+	border-top:1px solid #d8d8d8;
+	display:block;
+	padding:10px;
+	font-size:0.929em
+}
+.main-nav .list-chat-notify>.item.unread{
+	background-color:#def7f3
+}
+.main-nav .list-chat-notify>.item:hover{
+	background-color:#eefbf9
+}
+.main-nav .list-chat-notify>.item .user-image{
+	height:60px;
+	width:60px;
+	overflow:hidden;
+	margin-right:10px
+}
+.main-nav .list-chat-notify>.item img{
+	width:100%;
+	height:100%;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+.main-nav .list-chat-notify>.item a{
+	text-decoration:none
+}
+.main-nav .list-chat-notify .name{
+	color:#282828;
+	margin:0 0 3px 0
+}
+.main-nav .list-chat-notify .message{
+	color:#989999;
+	margin-bottom:0;
+	word-wrap: break-word;
+}
+.main-nav .list-chat-notify .time{
+	color:#989999;
+	font-size: 10px;
+	margin-bottom:0
+}
+
+.loadingTopBox {
+	width: 100%;
+	height: 50px;
+	background-color: #ECFAF8;
+	border-top: 1px solid #c8caca;
+}
+
+.loadingTopBox > img{
+	margin-top: 12px;
+	margin-left: 35%;
+}
+.loadingTopBox > span {
+	position: absolute;
+	width: 100%;
+	font-size:11px; 
+	color:grey;
+	margin-left: 43%;
+	margin-top: 15px;
+}
+
+.loadingTopBoxActivity {
+	width: 100%;
+	height: 50px;
+	background-color: #ECFAF8;
+	border-top: 1px solid #c8caca;
+}
+
+.loadingTopBoxActivity > img{
+	margin-top: 12px;
+	margin-left: 35%;
+}
+.loadingTopBoxActivity > span {
+	position: absolute;
+	width: 100%;
+	font-size:11px; 
+	color:grey;
+	margin-left: 43%;
+	margin-top: 15px;
+}
+
+.loadingTopBoxChat {
+	width: 100%;
+	height: 50px;
+	background-color: #ECFAF8;
+	border-top: 1px solid #c8caca;
+}
+
+.loadingTopBoxChat > img{
+	margin-top: 12px;
+	margin-left: 35%;
+}
+.loadingTopBoxChat > span {
+	position: absolute;
+	width: 100%;
+	font-size:11px; 
+	color:grey;
+	margin-left: 43%;
+	margin-top: 15px;
+}
+
+
+/*Mobile custom*/
+
+.header-notify{
+	font-size: 15px;
+	padding-left: 15px;
+}
+.item-notify-mobile{
+	cursor: pointer;
+	font-size: 12px;
+	border-bottom: 1px solid #2C2C2E;
+	padding: 10px;
+}
+.item-notify-mobile:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+.user-activity-mobile{
+	padding-left: 50px;
+	color: #ffffff;
+}
+.name-mobile{
+
+}
+.time-mobile{
+	font-size: 10px;
+}
+
+.url-notify-message-mobile{
+	text-decoration: none;
+}
+
+.item-mesage-mobile{
+	cursor: pointer;
+	font-size: 12px;
+	border-bottom: 1px solid #2C2C2E;
+	padding: 10px;
+}
+
+.item-mesage-mobile:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.item-chat-mobile{
+	cursor: pointer;
+	font-size: 12px;
+	border-bottom: 1px solid #2C2C2E;
+	padding: 10px;
+}
+
+.item-chat-mobile:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.list-notify-wrap .unread{
+	background-color: rgba(93, 207, 194, 0.1);
+}
+.list-messages-wrap .unread{
+	background-color: rgba(93, 207, 194, 0.1);
+}
+.list-messages-wrap .unread:hover{
+	background-color: rgba(93, 207, 194, 0.3);
+}
+
+.list-chat-wrap .unread{
+	background-color: rgba(93, 207, 194, 0.1);
+}
+.list-chat-wrap .unread:hover{
+	background-color: rgba(93, 207, 194, 0.3);
+}
+
+
+

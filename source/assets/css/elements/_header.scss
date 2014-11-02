@@ -1,0 +1,229 @@
+.site-header {
+	background-color: $brand;
+	border-bottom: 8px solid $brand-light;
+	margin-bottom: 20px;
+	.logo-brand {
+		display: block;
+		padding: 7px 0;
+		color: #fff;
+		font-size: 24px;
+		text-decoration: none;
+		-webkit-font-smoothing: antialiased;
+		font-family: 'Oleo Script', cursive;
+	}
+}
+
+.main-nav {
+	float: right;
+	margin: 10px 0;
+	ul.nav {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			display: inline-block;
+			margin-left: 20px;
+			> a {
+				color: $white;
+				display: block;
+				font-size: 1.8em;
+				padding: 3px 15px;
+				position: relative;
+				@include border-radius(4px);
+				&:hover {
+					background-color: $brand-dark;
+				}
+			}
+			.badge {
+				font-size: 1rem;
+				position: absolute;
+				top: 3px;
+				right: 3px;
+			}
+			&.dropdown {
+				&.profile > a {
+					font-size: 1em;
+					padding: 8px 10px;
+					// color: $gray;
+				}
+				.caret {
+					color: $brand-darker;
+				}
+				&.open {
+					> a {
+						background-color: $brand-dark;
+					}
+				}
+			}
+		}
+
+		&.nav-front {
+			margin-top: 8px;
+			a {
+				font-size: 1em;
+			}
+		}
+	}
+
+	.dropdown-menu {
+		margin-top: 10px;
+		> li {
+			> a {
+				color: $gray;
+				&:hover {
+					background-color: transparent !important;
+					color: $brand-dark;
+				}
+			}
+		}
+		&.notification-messages-wrap {
+			padding-bottom: 0;
+			padding-top: 0;
+			width: 375px;
+			.header {
+				h3 {
+					font-size: 1em;
+					font-weight: bold;
+					margin: 0;
+					padding: 15px 10px;
+				}
+			}
+			.footer {
+				border-top: 1px solid #9a9a9a;
+				a {
+					background-color: #f6f6f6;
+					color: $brand;
+					display: block;
+					font-size: 0.857em;
+					padding: 5px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.list-messages {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		> .item {
+			border-top: 1px solid #d8d8d8;
+			display: block;
+			padding: 10px;
+			font-size: 0.929em;
+			&.unread {
+				background-color: $brand-light;
+			}
+			&:hover {
+				background-color: lighten($brand-light, 4%);
+			}
+			.user-image {
+				height: 60px;
+				overflow: hidden;
+				width: 60px;
+				margin-right: 20px;
+			}
+			img {
+				width: 100%;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+		.name {
+			color: $gray-darker;
+			margin: 0 0 3px 0;
+		}
+		.message {
+			color: $gray;
+			margin-bottom: 0;
+		}
+		.time {
+			color: $gray;
+			display: block;
+			font-size: 0.714em;
+		}
+	}
+
+}
+
+/* User Menu on Mobile
+------------------------------------------------------------------- */
+.user-menu-button,
+.user-right-button {
+	background: none;
+	border: 0;
+	padding: 10px 15px;
+	position: relative;
+	z-index: 10;
+	margin-top: 12px;
+}
+
+.user-menu-button {
+	float: left;
+
+	span {
+		width: 20px;
+		height: 3px;
+		display: block;
+		background: #fff;
+
+		+ span {
+			margin-top: 3px;
+		}
+	}
+}
+
+.user-right-button {
+	float: right;
+	text-align: center;
+
+	span {
+		width: 5px;
+		height: 5px;
+		display: block;
+		background: #fff;
+		@include border-radius(7px);
+
+		+ span {
+			margin-top: 3px;
+		}
+	}
+}
+
+@media (max-width: $screen-md-max) {
+	#leftbox {
+		background: #fff;
+	}
+	.logo-wrap {
+		text-align: center;
+	}
+	.left-content {
+		overflow: scroll;
+	}
+	.left-content .user-profile-wrapper,
+	#dash-browse {
+		margin-bottom: 0;
+	}
+	#leftbox {
+		color: $gray-dark
+	}
+
+	// Menu Right Section
+	// ------------------
+	.rightbox-mobile {
+		background: $brand-primary;
+
+		.navbar-right {
+			float: none !important
+		}
+
+		.nav i {
+			font-size: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+

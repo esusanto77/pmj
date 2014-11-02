@@ -1,0 +1,35 @@
+{ 
+  "total_slides": 5,
+  "questions": [
+    {
+      "question_title": "Where do you live?",
+      "input_name": "user_location",
+      "choices": [
+        {
+          "value": "jakarta",
+          "label": "Jakarta"
+        },
+        {
+          "value": "bogor",
+          "label": "Bogor"
+        },
+        {
+          "value": "depok",
+          "label": "Depok"
+        },
+        {
+          "value": "tangerang",
+          "label": "Tangerang"
+        },
+        {
+          "value": "bekasi",
+          "label": "Bekasi"
+        },
+        {
+          "value": "cibubur",
+          "label": "Cibubur"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+!!! 5
+%html{:lang => "en-US"}
+	%head
+		= partial 'elements/meta'
+	%body{:class => page_classes}
+		#pageloader
+			%img{:src => "assets/img/ajax-loader.gif", :alt => ""}/ 
+		#page.hfeed
+			\
+			= partial 'elements/header'
+			\
+			= yield
+			\
+			= partial 'elements/footer'
+			\
+		/ end #page.hfeed
+		\
+
+		= partial 'elements/footer-code'

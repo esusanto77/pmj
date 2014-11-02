@@ -1,0 +1,151 @@
+.menu-left .badge {
+	margin-left: 20px;
+}
+
+.left-content .pm-btn {
+	display: block;
+	border:none;
+	background:#81d8cf;
+	color:#FFF;
+	width: 100%;
+	text-align: left;
+}
+
+#right-content {
+	border-left: 1px solid #e7e7e7;
+}
+
+.search-wrapper:after {
+	content: "";
+	clear: both;
+	width: 100%;
+}
+
+#right-content .form-control {
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+#right-content .form-group {
+	width: 50%;
+}
+
+#right-content .form-control {
+	width: 80% !important;
+}
+
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 10px 0;
+	border-radius: 4px;
+	float: right;
+}
+
+.pagination > li {
+	display: inline;
+	padding:4px 10px;
+	border:2px solid #f7f7f5;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.pagination > li:hover {
+	border:2px solid #e470af;
+	cursor: pointer;
+}
+
+.pagination > li:hover a {
+	color:#e470af;
+}
+
+.pagination a {
+	text-decoration: none;
+	color:#848790;
+}
+
+.pagination > li:first-child {
+	background:#f7f7f5;
+}
+
+.last a {
+	color:#cbcdca;
+}
+
+.mail-wrapper {
+	margin-top:25px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.mail-list tr {
+	padding:15px 0;
+	display: inline-block;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+}
+
+.mail-list td {
+	vertical-align: top;
+}
+
+.mail-list .content-title {
+	width: 80%;
+}
+
+.mail-list .action a {
+	color:#989898;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.mail-list .active {
+	background-color: #f7f7f7;
+}
+
+.mail-list .content-title {
+	color: #1ecaba;
+	font-weight: bold;
+}
+
+.mail-list {
+	border-top:5px solid #e8e9eb;
+}
+
+.mail-list .photo {
+	width: 80px;
+	padding-right: 30px;
+}
+
+.mail-list .title {
+	width: 150px;
+}
+
+.mail-list .title b {
+	display: block;
+	width: 100%:;
+}
+
+.mail-list .excerpt {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.mail-list .excerpt b {
+	color:#39d1c2;
+	display: block;
+	width: 100%;
+}
+
+.maildetail-item {
+	width: 95% !important;
+	margin: 0 auto;
+	list-style: none;
+	display: list-item !important; 
+}
+
+.chat-box img {
+	left: 0;
+}

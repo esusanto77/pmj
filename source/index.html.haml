@@ -1,0 +1,38 @@
+---
+layout: welcome
+title: Selamat Datang
+---
+
+#main.site-main.front-content-bg
+	.container
+		.row
+			.col-sm-12
+				.logo-welcome.text-center
+					%img{:src => "/assets/img/logo-home.png", :alt => "Welcome PM Jakarta"}/ 
+				.form-login-wrapper.center-block
+					%span.alert.alert-danger.form-login-alert.center-block Username dan Password Salah!
+					%form.form-inline{role: "form"}
+						.form-group
+							%input.form-control{placeholder: "Username", type: "email", :name => "name"}/
+						.form-group
+							%input.form-control{placeholder: "Password", type: "password", :name => "password"}/
+						%button.btn.btn-default{type: "submit"} LOGIN
+					/ end of form.form-inline
+					\
+					%a{:href => "#", :class => "forgot-password"} Forgot Password?
+.form-signup-wrapper.center-block
+	.row
+		.col-sm-7
+			%h4 ARE YOU NOT A MEMBER?
+			%h3 
+				JOIN US NOW
+				%span.small AND FIND YOUR FERPECT MATCH!
+		.col-sm-5
+			%form{role: "form"}
+				%h5 SIGN UP
+				.form-group
+					%input.form-control{placeholder: "Name", type: "text", :name => "name"}/
+				.form-group
+					%input.form-control{placeholder: "Email Address", type: "email", :name => "email"}/
+				.form-group.text-right
+					%button.btn.btn-signup{type: "submit"} Continue

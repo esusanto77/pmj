@@ -1,0 +1,19 @@
+{ 
+  "total_slides": 5,
+  "questions": [
+    {
+      "question_title": "Question Number 4?",
+      "input_name": "question_4",
+      "choices": [
+        {
+          "value": "lorem",
+          "label": "Lorem"
+        },
+        {
+          "value": "ipsum",
+          "label": "Ipsum"
+        }
+      ]
+    }
+  ]
+}

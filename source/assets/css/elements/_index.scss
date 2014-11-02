@@ -1,0 +1,91 @@
+.front-content-wrapper {
+	margin-bottom: 0 !important;
+}
+.front-content-bg {
+	background: #fff url(../img/bg-home.jpg) no-repeat center bottom;
+	min-height: 540px;
+}
+
+.logo-welcome {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+.form-login-wrapper {
+	width: 570px;
+	position: relative;
+	@media (max-width: $screen-sm-max) {
+		width: 90%;
+		padding-bottom: 30px;
+	}
+	.form-inline {
+		border: 1px solid rgba(0,0,0,.2);
+		background-color: rgba(0,0,0,.1);
+		padding: 6px;
+		text-align: center;
+		margin-bottom: 10px;
+		@include border-radius(4px);
+	}
+	input {
+		padding: 10px 20px;
+		height: auto;
+		min-width: 200px;
+	}
+	button {
+		padding: 10px 45px;
+		background-color: $brand;
+		color: $white;
+		border: none;
+		&:hover {
+			background-color: $pink;
+			color: $white;
+		}
+		@media (max-width: $screen-xs-max) {
+			width: 100%;
+		}
+	}
+	.forgot-password {
+		color: $pink;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.form-login-alert {
+		position: absolute;
+		top: -40px;
+		left: 0;
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
+}
+
+.form-signup-wrapper {
+	background-color: $white;
+	width: 100%;
+	max-width: 570px;
+	position: relative;
+	top: -60px;
+	padding: 20px 30px;
+	@include border-radius(5px);
+	@include box-shadow(0 -6px 15px rgba(0,0,0, .15));
+	@media (max-width: $screen-sm-max) {
+		top: auto;
+	}
+	h3 {
+		color: $pink;
+		span {
+			display: block;
+			color: #b45d81;
+		}
+	}
+	.btn-signup {
+		background-color: $pink;
+		color: $white;
+	}
+}
+
+
+
+
+
