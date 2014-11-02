@@ -78,9 +78,8 @@
 						?>
 						<div><br>EARLY BIRD DISCOUNTS TILL END OF YEARS<br>
 							DISCOUNT IF PAID BY :<br>
-							60% IF PAID IN MONTH OF OCT. <?php echo getAmountDetail($paket,"60"); ?> <br>
-							35% IF PAID IN MONTH OF NOV. <?php echo getAmountDetail($paket,"35"); ?><br>
-							15% IF PAID IN MONTH OF DEC. <?php echo getAmountDetail($paket,"15"); ?><br>
+							50% IF PAID IN MONTH OF NOV. <?php echo getAmountDetail($paket,"35"); ?><br>
+							25% IF PAID IN MONTH OF DEC. <?php echo getAmountDetail($paket,"15"); ?><br>
 							DISCOUNT WILL BE APPLIED AUTOMATICALLY<br>
 							ON THE PAYMENT PAGE<br>
 							DON'T MISS OUT AND ENJOY THE LARGE<br>
